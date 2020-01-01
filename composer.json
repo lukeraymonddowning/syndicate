@@ -1,0 +1,43 @@
+{
+    "name": "lukedowning/syndicate",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Downing",
+            "email": "lukeraymonddowning@gmail.com",
+            "homepage": "https://github.com/lukeraymonddowning"
+        }
+    ],
+    "homepage": "https://github.com/lukeraymonddowning/syndicate",
+    "keywords": ["Laravel", "Syndicate"],
+    "require": {
+        "illuminate/support": "~5|~6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LukeDowning\\Syndicate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LukeDowning\\Syndicate\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LukeDowning\\Syndicate\\SyndicateServiceProvider"
+            ],
+            "aliases": {
+                "Syndicate": "LukeDowning\\Syndicate\\Facades\\Syndicate"
+            }
+        }
+    }
+}
